@@ -151,7 +151,6 @@ From the command line in the hello directory, run the go build command to compil
 From the command line in the hello directory, run the new hello executable to confirm that the code works.
 ```
 $ ./hello
-map[Darrin:Great to see you, Darrin! Gladys:Hail, Gladys! Well met! Samantha:Hail, Samantha! Well met!]
 ```
 
 The `go build` command compiles Go code into an executable binary, similar to how `gcc` compiles C programs into runnable files. It creates a binary you can run direclty with `./binary-name`, making it reusable and easy to share. In comparison, `go run` compiles the code and runs it right away.

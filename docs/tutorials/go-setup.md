@@ -35,9 +35,9 @@ git commit -m "Initial commit with README"
 
 (B) Fill in the details as follows:
 
-- **Repository Name**: `comp423-go-notes`
+- **Repository Name**: `go-dev-container`
 
-- **Description**: "Tutorial for Go"
+- **Description**: "Hello World for Go using a dev container."
 
 - **Visibility**: Public
 
@@ -47,7 +47,7 @@ git commit -m "Initial commit with README"
 ### Step 3. Link your Local Repository to GitHub
 (A) Add the GitHub repository as a remote:
 ```
-git remote add origin https://github.com/<your-username>/comp423-go-notes.git
+git remote add origin https://github.com/<your-username>/go-dev-container.git
 ```
 (B) Check your default branch name with the subcommand `git branch`. If it's not `main`, rename it to `main` with the following command: `git branch -M main`. Old versions of `git` choose the name `master` for the primary branch, but these days `main` is the standard primary branch name.
 
@@ -57,7 +57,7 @@ git push --set-upstream origin main
 ```
 ## **Part 2. Setting Up the Development Environment**
 ### Step 1. Add Development Container Configuration
-(A) In VS Code, open the `comp423-go-notes directory`. You can do this via: File > Open Folder.
+(A) In VS Code, open the `go-dev-container directory`. You can do this via: File > Open Folder.
 
 (B) Install the **Dev Containers** extension for VS Code.
 

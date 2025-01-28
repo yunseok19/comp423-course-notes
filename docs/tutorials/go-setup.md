@@ -14,7 +14,8 @@ Before you begin, ensure you have the following:
 ## **Part 1. Project Setup: Creating the Repository**
 ### Step 1. Create a Local Directory and Initialize Git
 (A) Open your terminal or command prompt.
-
+!!! note
+    Ensure you're in the correct directory before running the commands
 (B) Create a new directory for your project. (Note: Of course, if you'd like to organize this tutorial somewhere else on your machine, go ahead and change into that parent directory first. By default this will be in your user's home directory.):
 ```
 mkdir go-dev-container
@@ -42,6 +43,9 @@ git commit -m "Initial commit with README"
 - **Visibility**: Public
 
 (C) Do **not** initialize the repository with a README, .gitignore, or license.
+
+!!! note 
+    Ensure the .devcontainer directory is at the root level of your project.
 
 (D) Click **Create Repository**.
 ### Step 3. Link your Local Repository to GitHub
@@ -91,7 +95,7 @@ The `devcontainer.json` file defines the configuration for your development envi
 
 (C) Wait for the container to initialize
 
-Once the setup completes, open a new terminal in VS Code and verify the Go installation:
+Open a new terminal in VS Code and verify the Go installation, after the setup has completed.
 ```
 go version 
 ```
@@ -102,13 +106,17 @@ For example, use the following commands:
 mkdir hello
 cd hello
 ```
+!!! note
+    Try and use descriptive names for directories to keep your project organized which will help leave as little room for confusion as possible.
 (B) Enable dependency tracking for your code
 
 When your code imports packages contained in other modules, you manage those dependencies through your code's own module. That module is defined by a go.mod file that tracks the modules that provide those packages. That go.mod file stays with your code, including in your source code repository.
 
 To enable dependency tracking for your code by creating a go.mod file, run the [go mod init command](https://go.dev/ref/mod#go-mod-init), giving it the name of the module your code will be in. The name is the module's module path.
 
-In actual development, the module path will typically be the repository location where your source code will be kept. For example, the module path might be github.com/mymodule. If you plan to publish your module for others to use, the module path must be a location from which Go tools can download your module. For more about naming a module with a module path, see [Managing dependencies](https://go.dev/doc/modules/managing-dependencies#naming_module).
+- In actual development, the module path will typically be the repository location where your source code will be kept. 
+
+For example, the module path might be github.com/mymodule. If you plan to publish your module for others to use, the module path must be a location from which Go tools can download your module. For more about naming a module with a module path, see [Managing dependencies](https://go.dev/doc/modules/managing-dependencies#naming_module).
 
 For the purpose of this tutorial, just use `example/hello`
 ```
@@ -152,8 +160,11 @@ From the command line in the hello directory, run the new hello executable to co
 ```
 $ ./hello
 ```
-
+You will see the following output
+```
+Hello, COMP423!
+```
 The `go build` command compiles Go code into an executable binary, similar to how `gcc` compiles C programs into runnable files. It creates a binary you can run direclty with `./binary-name`, making it reusable and easy to share. In comparison, `go run` compiles the code and runs it right away.
 
 ## **Congrats**
-You have succesfully finished your first Go program!
+You have succesfully finished your first Go program! These are very important skills and hats off to you for taking that first step to tackle all types of projects, whether professional or open-source. Great job!

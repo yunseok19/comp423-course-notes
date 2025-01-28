@@ -74,7 +74,7 @@ The `devcontainer.json` file defines the configuration for your development envi
 - **customizations**: Automatically installs the Go extension in VS Code.
 ```
 {
-  "name": "Gp Tutorial",
+  "name": "Go Tutorial",
   "image": "mcr.microsoft.com/devcontainers/go:latest",
   "customizations": {
     "vscode": {
